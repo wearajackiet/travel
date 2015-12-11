@@ -1,0 +1,9 @@
+.helloworld {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #585858;
+	font-size: 40px;
+	font-family: 'Merriweather', serif;
+}
