@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title> <%= @document.title + "| " if @document.title != "Home" %>Travel | Jackie Tseng</title>
+    <%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").toHTML() %>
+    <%- @getBlock("styles").add(["styles/travel.css"]).toHTML() %>
+    <%- @getBlock("scripts").add(["vendor/jquery.js"]).toHTML() %>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display|Lora|Oswald:400,700|Merriweather|Pontano+Sans|Rajdhani:500' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h1><%= @document.title if @document.title != "Home" %></h1>
+    <%- @content %>
+    <%- @getBlock("scripts").toHTML() %>
+</body>
+</html>
